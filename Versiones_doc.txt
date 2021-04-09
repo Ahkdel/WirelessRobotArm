@@ -1,0 +1,12 @@
+Primera version de documento:
+
+1. Se hace una breve explicación del proyecto.
+2. Se justifican los motivos por el que se realiza el proyecto.
+3. Los componentes a usar y su razón de inclusión.
+4. Módulos profesionales relacionados con el proyecto.
+5. Un breve mapa del diseño del proyecto.
+
+Segunda versión:
+
+1. Modificación del mapa del diseño. Se incluye las fuentes de alimentación.
+2. Se añade una lista de compras con el link donde se realizó la compra.
