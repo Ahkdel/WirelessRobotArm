@@ -1,0 +1,170 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00002 
+   (rule
+   )
+   (wire (path BOT 25400  -11226000 9210000 -11226000 9250000 -9750000 9250000)
+    (connect (terminal pin SIM1-19) (terminal pin J2-0))
+   )
+   )
+   (Net #00004 
+   (rule
+   )
+   (wire (path BOT 25400  -11226000 9718000 -9750000 9718000 -9750000 9984000)
+    (connect (terminal pin SIM1-21) (terminal pin SW2-0))
+   )
+   )
+   (Net #00005 
+   (rule
+   )
+   (wire (path BOT 25400  -11226000 9972000 -10091441 9972000 -10091441 11000000
+     -9750000 11000000)
+    (connect (terminal pin SIM1-22) (terminal pin SW2-2))
+   )
+   )
+   (Net 3V3 
+   (rule
+   )
+   (wire (path TOP 25400  -12750000 11496000 -12754000 11500000 -14162746 11500000
+     -14326406 11328597 -14326406 9246406 -13750000 8670000)
+    (connect (terminal pin SIM1-1) (terminal pin J3-1))
+    (type protect)
+   )
+   )
+   (Net 9V 
+   (rule
+   )
+   (wire (path BOT 25400  -9750000 8742000 -9461500 8742000 -9461500 7239000
+     -12250000 7239000 -12250000 7500000)
+    (connect (terminal pin J2-1) (terminal pin J1-0))
+   )
+   (wire (path BOT 25400  -12750000 8194000 -12750000 7500000 -12250000 7500000)
+    (connect (terminal pin SIM1-14) (terminal pin J1-0))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 25400  -9750000 8234000 -10321066 8234000 -10321066 8956000
+     -11226000 8956000)
+    (connect (terminal pin J2-2) (terminal pin SIM1-18))
+   )
+   (wire (path BOT 25400  -12065000 8509000 -12065000 8956000 -11226000 8956000)
+    (connect (terminal wire) (terminal pin SIM1-18))
+   )
+   (wire (path BOT 25400  -12065000 8509000 -11742000 8509000 -11742000 7500000)
+    (connect (terminal wire) (terminal pin J1-1))
+   )
+   (wire (path BOT 25400  -12750000 8448000 -13398500 8448000 -13398500 8162000
+     -13750000 8162000)
+    (connect (terminal pin SIM1-13) (terminal pin J3-0))
+   )
+   (wire (path BOT 25400  -12750000 8448000 -12065000 8448000 -12065000 8509000)
+    (connect (terminal pin SIM1-13) (terminal wire))
+   )
+   )
+   (Net SCL 
+   (rule
+   )
+   (wire (path BOT 25400  -12750000 9718000 -12250000 10218000 -12250000 12000000
+     -13468000 12000000 -13750000 11718000)
+    (connect (terminal pin SIM1-8) (terminal pin J3-7))
+    (type protect)
+   )
+   )
+   (Net SDA 
+   (rule
+   )
+   (wire (path BOT 25400  -12750000 9972000 -13046378 9972000 -13046378 11210000
+     -13750000 11210000)
+    (connect (terminal pin SIM1-7) (terminal pin J3-6))
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path BOT 25400  -12750000 8956000 -11750000 9956000 -11750000 12000000
+     -9500000 12000000 -9000000 11500000 -9000000 11242000 -9750000 10492000)
+    (connect (terminal pin SIM1-11) (terminal pin SW2-1))
+    (type protect)
+   )
+   )
+  )
+ )

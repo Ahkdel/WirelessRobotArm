@@ -13,13 +13,13 @@
 #include <SPI.h> // Not actually used but needed to compile
 #endif
 
-RH_ASK driver;
+RH_ASK driver (2000, 2, 0, 1, false);
 // RH_ASK driver(2000, 4, 5, 0); // ESP8266 or ESP32: do not use pin 11 or 2
 // RH_ASK driver(2000, 3, 4, 0); // ATTiny, RX on D3 (pin 2 on attiny85) TX on D4 (pin 3 on attiny85), 
 // RH_ASK driver(2000, PD14, PD13, 0); STM32F4 Discovery: see tx and rx on Orange and Red LEDS
 
 //LiquidCrystal(rs, enable, d4, d5, d6, d7);
-LiquidCrystal lcd (7, 6, 5, 4, 3, 2);
+LiquidCrystal lcd (8, 9, 10, 11, 12, 13);
 
 void setup()
 {
@@ -42,7 +42,7 @@ void loop()
   uint8_t buf[RH_ASK_MAX_MESSAGE_LEN];
   uint8_t buflen = sizeof(buf);
   digitalWrite(LED_BUILTIN, LOW);
-  
+           
   if (driver.recv(buf, &buflen)) { // Non-blocking
     digitalWrite(LED_BUILTIN, HIGH);
     int i;

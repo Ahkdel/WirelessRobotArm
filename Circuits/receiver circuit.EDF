@@ -1,0 +1,515 @@
+(PCB receiver_circuit
+ (parser
+  (host_cad ARES)
+  (host_version 8.9 SP2)
+ )
+ (resolution mm 100000)
+ (unit mm)
+ (structure
+  (boundary (rect pcb -95.68466 -44.55160 -5.99440 53.52066))
+  (flip_style mirror_first)
+  (layer TOP (type signal) (direction off))
+  (layer I1 (type signal) (direction off))
+  (layer I2 (type signal) (direction off))
+  (layer I3 (type signal) (direction off))
+  (layer I4 (type signal) (direction off))
+  (layer I5 (type signal) (direction off))
+  (layer I6 (type signal) (direction off))
+  (layer I7 (type signal) (direction off))
+  (layer I8 (type signal) (direction off))
+  (layer I9 (type signal) (direction off))
+  (layer I10 (type signal) (direction off))
+  (layer I11 (type signal) (direction off))
+  (layer I12 (type signal) (direction off))
+  (layer I13 (type signal) (direction off))
+  (layer I14 (type signal) (direction off))
+  (layer BOT (type signal) (direction orthogonal))
+  (grid via  0.63500)
+  (grid wire 0.63500)
+  (control
+   (via_at_smd off)
+   (off_grid on)
+  )
+  (via
+   $VIA#0_SIGNAL
+   (spare
+    $VIA#0_POWER
+   )
+  )
+  (rule
+   (width 0.25400)
+   (clearance 0.38100)
+   (clearance 0.25400 (type wire_via))
+   (clearance 0.25400 (type wire_smd))
+   (clearance 0.25400 (type wire_pin))
+   (clearance 0.25400 (type wire_wire))
+   (clearance 0.25400 (type via_pin))
+   (clearance 0.25400 (type via_via))
+   (clearance 0.25400 (type via_smd))
+  )
+ )
+ (placement
+  (component "ARDUINO SHIELD_ARD1" (place ARD1 -73.66000 19.05000 front -270))
+  (component "TBLOCK-I3_J1" (place J1 -12.70000 3.81000 front -90))
+  (component RES40_R1 (place R1 -12.70000 11.43000 front 90))
+  (component RES40_R2 (place R2 -16.51000 21.59000 front -90))
+  (component "POT-CIRCULAR_RV1" (place RV1 -93.98000 43.18000 front -270))
+  (component CON16_1X16_U_FCI_LCD1 (place LCD1 -87.63000 0.00000 front -90))
+  (component "TBLOCK-I3_SERVO5" (place SERVO5 -63.50000 39.37000 front -270))
+  (component "TBLOCK-I3_SERVO4" (place SERVO4 -54.61000 39.37000 front -270))
+  (component "TBLOCK-I3_SERVO3" (place SERVO3 -45.72000 39.37000 front -270))
+  (component "TBLOCK-I3_SERVO2" (place SERVO2 -36.83000 39.37000 front -270))
+  (component "TBLOCK-I3_SERVO1" (place SERVO1 -27.94000 39.37000 front -270))
+  (component "TBLOCK-I4_RF_RECEIVER" (place RF_RECEIVER -81.28000 26.67000 front 0))
+ )
+ (library
+  (image "ARDUINO SHIELD_ARD1" (side front)
+   (outline (rect TOP -63.60160 -50.90160 5.18160 2.64160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 -2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 -5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 -7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 -27.94000 -48.26000)
+   (pin PS0 (rotate 0) 5 -10.16000 0.00000)
+   (pin PS0 (rotate 0) 6 -12.70000 0.00000)
+   (pin PS0 (rotate 0) 7 -25.40000 -48.26000)
+   (pin PS0 (rotate 0) 8 -15.24000 0.00000)
+   (pin PS0 (rotate 0) 9 -17.78000 0.00000)
+   (pin PS0 (rotate 0) 10 -21.59000 0.00000)
+   (pin PS0 (rotate 0) 11 -24.13000 0.00000)
+   (pin PS0 (rotate 0) 12 -26.67000 0.00000)
+   (pin PS0 (rotate 0) 13 -29.21000 0.00000)
+   (pin PS0 (rotate 0) 14 -31.75000 0.00000)
+   (pin PS0 (rotate 0) 15 -34.29000 0.00000)
+   (pin PS0 (rotate 0) 16 -35.56000 -48.26000)
+   (pin PS0 (rotate 0) 17 -12.70000 -48.26000)
+   (pin PS0 (rotate 0) 18 -10.16000 -48.26000)
+   (pin PS0 (rotate 0) 19 -7.62000 -48.26000)
+   (pin PS0 (rotate 0) 20 -5.08000 -48.26000)
+   (pin PS0 (rotate 0) 21 -2.54000 -48.26000)
+   (pin PS0 (rotate 0) 22 0.00000 -48.26000)
+   (pin PS0 (rotate 0) 23 -39.37000 0.00000)
+   (pin PS0 (rotate 0) 24 -22.86000 -48.26000)
+   (pin PS0 (rotate 0) 25 -20.32000 -48.26000)
+   (pin PS0 (rotate 0) 26 -36.83000 0.00000)
+   (pin PS0 (rotate 0) 27 -33.02000 -48.26000)
+   (pin PS0 (rotate 0) 28 -30.48000 -48.26000)
+   (pin PS0 (rotate 0) 29 -44.45000 0.00000)
+   (pin PS0 (rotate 0) 30 -41.91000 0.00000)
+   (pin PS0 (rotate 0) 31 -17.78000 -48.26000)
+  )
+  (image "TBLOCK-I3_J1" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+  )
+  (image RES40_R1 (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image RES40_R2 (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "POT-CIRCULAR_RV1" (side front)
+   (outline (rect TOP -10.34066 -21.59000 10.34066 1.27000))
+   (pin PS2 (rotate 0) 0 -6.35000 -20.32000)
+   (pin PS2 (rotate 0) 1 6.35000 -20.32000)
+   (pin PS2 (rotate 0) 2 0.00000 0.00000)
+  )
+  (image CON16_1X16_U_FCI_LCD1 (side front)
+   (outline (rect TOP -21.79320 -1.60020 24.33320 2.54000))
+   (pin PS3 (rotate 0) 0 -17.78000 0.00000)
+   (pin PS3 (rotate 0) 1 -15.24000 0.00000)
+   (pin PS3 (rotate 0) 2 -12.70000 0.00000)
+   (pin PS3 (rotate 0) 3 -10.16000 0.00000)
+   (pin PS3 (rotate 0) 4 -7.62000 0.00000)
+   (pin PS3 (rotate 0) 5 -5.08000 0.00000)
+   (pin PS3 (rotate 0) 6 -2.54000 0.00000)
+   (pin PS3 (rotate 0) 7 0.00000 0.00000)
+   (pin PS3 (rotate 0) 8 2.54000 0.00000)
+   (pin PS3 (rotate 0) 9 5.08000 0.00000)
+   (pin PS3 (rotate 0) 10 7.62000 0.00000)
+   (pin PS3 (rotate 0) 11 10.16000 0.00000)
+   (pin PS3 (rotate 0) 12 12.70000 0.00000)
+   (pin PS3 (rotate 0) 13 15.24000 0.00000)
+   (pin PS3 (rotate 0) 14 17.78000 0.00000)
+   (pin PS3 (rotate 0) 15 20.32000 0.00000)
+  )
+  (image "TBLOCK-I3_SERVO5" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+  )
+  (image "TBLOCK-I3_SERVO4" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+  )
+  (image "TBLOCK-I3_SERVO3" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+  )
+  (image "TBLOCK-I3_SERVO2" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+  )
+  (image "TBLOCK-I3_SERVO1" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+  )
+  (image "TBLOCK-I4_RF_RECEIVER" (side front)
+   (outline (rect TOP -2.64160 -5.18160 17.88160 5.18160))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 5.08000 0.00000)
+   (pin PS1 (rotate 0) 2 10.16000 0.00000)
+   (pin PS1 (rotate 0) 3 15.24000 0.00000)
+  )
+  (padstack PS0 (absolute on)
+   (shape (circle TOP 1.77800 0 0))
+   (shape (circle I1 1.77800 0 0))
+   (shape (circle I2 1.77800 0 0))
+   (shape (circle I3 1.77800 0 0))
+   (shape (circle I4 1.77800 0 0))
+   (shape (circle I5 1.77800 0 0))
+   (shape (circle I6 1.77800 0 0))
+   (shape (circle I7 1.77800 0 0))
+   (shape (circle I8 1.77800 0 0))
+   (shape (circle I9 1.77800 0 0))
+   (shape (circle I10 1.77800 0 0))
+   (shape (circle I11 1.77800 0 0))
+   (shape (circle I12 1.77800 0 0))
+   (shape (circle I13 1.77800 0 0))
+   (shape (circle I14 1.77800 0 0))
+   (shape (circle BOT 1.77800 0 0))
+  )
+  (padstack PS1 (absolute on)
+   (shape (circle TOP 3.04800 0 0))
+   (shape (circle I1 3.04800 0 0))
+   (shape (circle I2 3.04800 0 0))
+   (shape (circle I3 3.04800 0 0))
+   (shape (circle I4 3.04800 0 0))
+   (shape (circle I5 3.04800 0 0))
+   (shape (circle I6 3.04800 0 0))
+   (shape (circle I7 3.04800 0 0))
+   (shape (circle I8 3.04800 0 0))
+   (shape (circle I9 3.04800 0 0))
+   (shape (circle I10 3.04800 0 0))
+   (shape (circle I11 3.04800 0 0))
+   (shape (circle I12 3.04800 0 0))
+   (shape (circle I13 3.04800 0 0))
+   (shape (circle I14 3.04800 0 0))
+   (shape (circle BOT 3.04800 0 0))
+  )
+  (padstack PS2 (absolute on)
+   (shape (circle TOP 2.54000 0 0))
+   (shape (circle I1 2.54000 0 0))
+   (shape (circle I2 2.54000 0 0))
+   (shape (circle I3 2.54000 0 0))
+   (shape (circle I4 2.54000 0 0))
+   (shape (circle I5 2.54000 0 0))
+   (shape (circle I6 2.54000 0 0))
+   (shape (circle I7 2.54000 0 0))
+   (shape (circle I8 2.54000 0 0))
+   (shape (circle I9 2.54000 0 0))
+   (shape (circle I10 2.54000 0 0))
+   (shape (circle I11 2.54000 0 0))
+   (shape (circle I12 2.54000 0 0))
+   (shape (circle I13 2.54000 0 0))
+   (shape (circle I14 2.54000 0 0))
+   (shape (circle BOT 2.54000 0 0))
+  )
+  (padstack PS3 (absolute on)
+   (shape (circle TOP 1.52400 0 0))
+   (shape (circle BOT 1.52400 0 0))
+  )
+  (padstack $VIA#0_SIGNAL (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+  (padstack $VIA#0_POWER (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+ )
+ (network
+  (net "#00004"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-2 RF_RECEIVER-1)
+  )
+  (net "#00008"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-3 SERVO5-0)
+  )
+  (net "#00009"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-5 SERVO4-0)
+  )
+  (net "#00010"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-6 SERVO3-0)
+  )
+  (net "#00011"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-8 SERVO2-0)
+  )
+  (net "#00012"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-9 SERVO1-0)
+  )
+  (net "#00013"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-10 LCD1-3)
+  )
+  (net "#00014"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-11 LCD1-5)
+  )
+  (net "#00015"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-12 LCD1-10)
+  )
+  (net "#00016"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-13 LCD1-11)
+  )
+  (net "#00017"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-14 LCD1-12)
+  )
+  (net "#00018"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-15 LCD1-13)
+  )
+  (net "#00041"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins RV1-2 LCD1-2)
+  )
+  (net "12V"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_POWER
+    )
+   )
+   (pins J1-0 R1-0)
+  )
+  (net "5V"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_POWER
+    )
+   )
+   (pins J1-2 LCD1-14 RF_RECEIVER-0)
+  )
+  (net "6V"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins R1-1 R2-0 LCD1-1 SERVO5-1 SERVO4-1 SERVO3-1 SERVO2-1 SERVO1-1)
+  )
+  (net "GND"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_POWER
+    )
+   )
+    (pins ARD1-24 ARD1-26 J1-1 R2-1 RV1-1 LCD1-0 LCD1-4 LCD1-15 SERVO5-2 SERVO4-2 SERVO3-2
+    SERVO2-2 SERVO1-2 RF_RECEIVER-3)
+  )
+  (net "VCC"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ARD1-7)
+  )
+  (class POWER
+   "12V"
+   "5V"
+   "GND"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+  (class SIGNAL
+   "#00004"
+   "#00008"
+   "#00009"
+   "#00010"
+   "#00011"
+   "#00012"
+   "#00013"
+   "#00014"
+   "#00015"
+   "#00016"
+   "#00017"
+   "#00018"
+   "#00041"
+   "6V"
+   "VCC"
+   "{NC}"
+   "{VOID}"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+ )
+ (wiring
+  (wire (path BOT 0.25400 -73.66000 -7.62000 -87.63000 -7.62000) (net "#00015"))
+  (wire (path BOT 0.25400 -73.66000 -10.16000 -87.63000 -10.16000) (net "#00016"))
+  (wire (path BOT 0.25400 -73.66000 -12.70000 -87.63000 -12.70000) (net "#00017"))
+  (wire (path BOT 0.25400 -73.66000 -15.24000 -87.63000 -15.24000) (net "#00018"))
+  (wire (path BOT 0.25400 -12.70000 3.81000 -12.70000 11.43000) (net "12V"))
+   (wire (path BOT 0.25400 -12.70000 -6.35000 -24.76500 -18.41500 -71.12000 -18.41500
+   -73.02500 -16.51000) (net "5V"))
+   (wire (path BOT 0.25400 -73.02500 -16.51000 -86.36000 -16.51000 -87.63000 -17.78000
+  ) (net "5V"))
+  (wire (path BOT 0.25400 -36.83000 44.45000 -27.94000 44.45000) (net "6V"))
+  (wire (path BOT 0.25400 -45.72000 44.45000 -36.83000 44.45000) (net "6V"))
+  (wire (path BOT 0.25400 -54.61000 44.45000 -45.72000 44.45000) (net "6V"))
+  (wire (path BOT 0.25400 -63.50000 44.45000 -54.61000 44.45000) (net "6V"))
+  (wire (path BOT 0.25400 -12.70000 21.59000 -16.51000 21.59000) (net "6V"))
+   (wire (path BOT 0.25400 -73.66000 -17.78000 -81.28000 -17.78000 -83.82000 -20.32000
+   -87.63000 -20.32000) (net "GND"))
+   (wire (path BOT 0.25400 -25.40000 -3.81000 -18.41499 -3.80999 -15.87500 -1.27000)
+   (net "GND"))
+  (wire (path BOT 0.25400 -25.40000 -3.81000 -25.40000 -3.80999) (net "GND"))
+   (wire (path BOT 0.25400 -15.87500 -1.27000 -16.51000 -0.63500 -16.51000 11.43000)
+   (net "GND"))
+  (wire (path BOT 0.25400 -73.66000 49.53000 -73.66001 49.53000) (net "GND"))
+  (wire (path BOT 0.25400 -73.66000 49.53000 -63.50000 49.53000) (net "GND"))
+  (wire (path BOT 0.25400 -36.83000 49.53000 -27.94000 49.53000) (net "GND"))
+  (wire (path BOT 0.25400 -45.72000 49.53000 -36.83000 49.53000) (net "GND"))
+  (wire (path BOT 0.25400 -54.61000 49.53000 -45.72000 49.53000) (net "GND"))
+  (wire (path BOT 0.25400 -63.50000 49.53000 -54.61000 49.53000) (net "GND"))
+  (wire (path BOT 0.25400 -15.87500 -1.27000 -12.70000 -1.27000) (net "GND"))
+ )
+)
