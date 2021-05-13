@@ -1,4 +1,4 @@
-// For the Nano
+  // For the Nano
 
 // ask_transmitter.pde
 // -*- mode: C++ -*-
@@ -47,28 +47,24 @@ void setup()
   }
   originX = accel.getX();
   originY = accel.getY();
-  originZ = accel.getZ();
   Serial.print("originX = "); Serial.println(originX);
   Serial.print("originY = "); Serial.println(originY);
-  Serial.print("originZ = "); Serial.println(originZ);
 
+  pinMode(A0, INPUT);
   pinMode(A1, INPUT);
-  pinMode(A2, INPUT);
 }
 
 void loop()
 {
-    int x, y, z;
+    int x, y;
     int opening, closing, nothing;
     gripStatus grip;
     
     x = accel.getX() - originX;
     y = accel.getY() - originY;
-    z = accel.getZ() - originZ;
     
     Serial.print("X = "); Serial.println(x);
     Serial.print("Y = "); Serial.println(y);
-    Serial.print("Z = "); Serial.println(z);
     
     grip = NOTHING;
     opening = analogRead(A1);
@@ -92,13 +88,11 @@ void loop()
     sprintf(gripString, "%d", grip);
     sprintf(xString,    "%d", x);
     sprintf(yString,    "%d", y);
-    sprintf(zString,    "%d", z);
 
     String msgString;
     msgString += gripString; msgString += ",";
     msgString += xString;    msgString += ",";
-    msgString += yString;    msgString += ",";
-    msgString += zString;
+    msgString += yString;
     
     const char *msg = msgString.c_str();
     Serial.print("Message = "); Serial.println(msg);
