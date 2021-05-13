@@ -1,3 +1,0 @@
-Sources for EEZYbotARM MK2
-
-EEZYbotARM (https://www.thingiverse.com/thing:1015238)
